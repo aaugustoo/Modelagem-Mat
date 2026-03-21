@@ -1,1 +1,1 @@
-Repositório onde as resoluções em código feitas na disciplina de Modelagem Matemática serão depositadas.
+Repositório onde as resoluções em código feitas para a disciplina de Modelagem Matemática serão depositadas.
