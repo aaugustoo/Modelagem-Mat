@@ -59,9 +59,9 @@ do
 end
 
 -- Plotagem do gráfico
-Grafico:plot{X, Y_Analitico, mode="o", ls="-", color="green", name="Solução Real"}
-Grafico:plot{X, Y_Euler, mode="o", ls="--", color="red", name="Método de Euler"}
-Grafico:plot{X, Y_Runge_Kutta, mode="o", ls="--", color="blue", name="Método de Runge-Kutta"}
+Grafico:plot{X, Y_Analitico, mode="lines+markers", marker={symbol="circle", color="green"}, ls="-", color="green", name="Solução Real"}
+Grafico:plot{X, Y_Euler, mode="lines+markers", marker={symbol="circle", color="red"}, ls="--", color="red", name="Método de Euler"}
+Grafico:plot{X, Y_Runge_Kutta, mode="lines+markers", marker={symbol="circle", color="blue"}, ls="--", color="blue", name="Método de Runge-Kutta"}
 
 Grafico:plot{title="Gráfico com as resoluções do PVI {y' = -y³; y(0) = 1}, com h = 0.1 e 0 <= x <= 5"}
 Grafico:plot{xlabel="Eixo x"}
