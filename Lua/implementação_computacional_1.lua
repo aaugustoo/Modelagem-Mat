@@ -1,4 +1,4 @@
--- Biblioteca plotly realza a plotagem gráfica das soluções
+-- Biblioteca plotly realiza a plotagem gráfica das soluções
 Plotly = require("plotly")
 Grafico = Plotly.figure()
 
