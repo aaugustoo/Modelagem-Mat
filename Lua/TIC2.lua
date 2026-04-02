@@ -24,7 +24,7 @@ H = 0.001
 Limite = 16
 
 
--- Inicialização das listas (tabels indície-valor) que contém os valores do eixo horizontal (Tempo),
+-- Inicialização das listas (tabelas índicie-valor) que contém os valores do eixo horizontal (Tempo),
 -- da quantidade de predadores em um instante t (Xpreda)
 -- e da quantidade de presas em um instante t (Ypresa)
 Tempo = {}
@@ -32,7 +32,7 @@ Xpreda = {}
 Ypresa = {}
 
 
--- Preenchimente da lista Tempo com valores partindo de t0 (condição inicial) e incrementando h até chegar no limite superior do intervalo
+-- Preenchimento da lista Tempo com valores partindo de t0 (condição inicial) e incrementando h até chegar no limite superior do intervalo
 Valor = T0
 while Valor <= Limite
 do
@@ -41,7 +41,7 @@ do
 end
 
 
--- Inicialização de Xpreda e Ypresa com os valores da condição inicial, lua tem o indície 1 como o inicial
+-- Inicialização de Xpreda e Ypresa com os valores da condição inicial, lua tem o índicie 1 como o inicial
 Xpreda[1] = X0
 Ypresa[1] = Y0
 

@@ -31,7 +31,7 @@ Xpreda = []
 Ypresa = []
 
 
-# Preenchimente da lista Tempo com valores partindo de t0 (condição inicial) e incrementando h até chegar no limite superior do intervalo
+# Preenchimento da lista Tempo com valores partindo de t0 (condição inicial) e incrementando h até chegar no limite superior do intervalo
 valor = t0
 while valor <= limite:
     Tempo.append(valor)
@@ -40,12 +40,12 @@ while valor <= limite:
 
 # As listas Xpreda e Ypresa tem a mesma quantidade de posições que a lista Tempo,
 # por isso serão preenchidas inicialmente com 0 na quantidade de posições que a lista Tempo possui,
-# isso permitirá a manipulação de indícies em Xpreda e Ypresa posteriormente no código
+# isso permitirá a manipulação de índicies em Xpreda e Ypresa posteriormente no código
 Xpreda = [0] * len(Tempo)
 Ypresa = [0] * len(Tempo)
 
 
-# Preenchimento das posições inicias (indície 0) de Xpreda e Ypresa com os valores da condição inicial do problema
+# Preenchimento das posições inicias (índicie 0) de Xpreda e Ypresa com os valores da condição inicial do problema
 Xpreda[0] = x0
 Ypresa[0] = y0
 
