@@ -66,5 +66,6 @@ Grafico:plot{X, Y_Runge_Kutta, mode="lines+markers", marker={symbol="circle", co
 Grafico:plot{title="Gráfico com as resoluções do PVI {y' = -y³; y(0) = 1}, com h = 0.1 e 0 <= x <= 5"}
 Grafico:plot{xlabel="Eixo x"}
 Grafico:plot{ylabel="Eixo y"}
+
 Grafico:plot{legend="True"}
 Grafico:plot{grid="True"}:show()
