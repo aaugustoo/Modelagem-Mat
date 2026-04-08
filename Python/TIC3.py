@@ -80,7 +80,7 @@ while n < len(Tempo) - 1:
     # Espécie 1 (Xe)
     Xe[n+1] = Xe[n] + h*f1(Tempo[n], Xe[n], Ye[n])
 
-    #Espécie 2 (Ye)
+    # Espécie 2 (Ye)
     Ye[n+1] = Ye[n] + h*f2(Tempo[n], Xe[n], Ye[n])
 
     n += 1
