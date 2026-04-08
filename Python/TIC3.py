@@ -74,7 +74,7 @@ Yrk[0] = y0
 
 
 # Preenchimento do restante das posições das listas Xe e Ye utilizando o método de Euler,
-# quantidades dos elementos das espécie 1 e 2 em relação ao tempo pelo método de Euler
+# quantidades dos elementos das espécies 1 e 2 em relação ao tempo pelo método de Euler
 n = 0
 while n < len(Tempo) - 1:
     # Espécie 1 (Xe)
@@ -87,7 +87,7 @@ while n < len(Tempo) - 1:
 
 
 # Preenchimento do restante das posições das listas Xrk e Yrk utilizando o método de Runge-Kutta,
-# quantidades dos elementos das espécie 1 e 2 em relação ao tempo pelo método de Runge-Kutta
+# quantidades dos elementos das espécies 1 e 2 em relação ao tempo pelo método de Runge-Kutta
 n = 0
 while n < len(Tempo) - 1:
     # Kn1 da espécie 1 (Kn11) e Kn1 da espécie 2 (Kn21)
