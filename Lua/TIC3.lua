@@ -92,27 +92,27 @@ end
 -- quantidades dos elementos das espécies 1 e 2 em relação ao tempo pelo método de Runge-Kutta
 for n = 1, #Tempo - 1, 1
 do
-    -- Kn1 da espécie 1 (Kn11) e Kn1 da espécie 2 (Kn21)
-    Kn11 = F1(Tempo[n], Xrk[n], Yrk[n])
-    Kn21 = F2(Tempo[n], Xrk[n], Yrk[n])
+    -- Kn1 da espécie 1 (K11) e Kn1 da espécie 2 (K21)
+    K11 = F1(Tempo[n], Xrk[n], Yrk[n])
+    K21 = F2(Tempo[n], Xrk[n], Yrk[n])
 
-    -- Kn2 da espécie 1 (Kn12) e Kn2 da espécie 2 (Kn22)
-    Kn12 = F1(Tempo[n] + 1/2 * H, Xrk[n] + 1/2 * H * Kn11, Yrk[n] + 1/2 * H * Kn21)
-    Kn22 = F2(Tempo[n] + 1/2 * H, Xrk[n] + 1/2 * H * Kn11, Yrk[n] + 1/2 * H * Kn21)
+    -- Kn2 da espécie 1 (K12) e Kn2 da espécie 2 (K22)
+    K12 = F1(Tempo[n] + 1/2 * H, Xrk[n] + 1/2 * H * K11, Yrk[n] + 1/2 * H * K21)
+    K22 = F2(Tempo[n] + 1/2 * H, Xrk[n] + 1/2 * H * K11, Yrk[n] + 1/2 * H * K21)
 
-    -- Kn3 da espécie 1 (Kn13) e Kn3 da espécie 2 (Kn23)
-    Kn13 = F1(Tempo[n] + 1/2 * H, Xrk[n] + 1/2 * H * Kn12, Yrk[n] + 1/2 * H * Kn22)
-    Kn23 = F2(Tempo[n] + 1/2 * H, Xrk[n] + 1/2 * H * Kn12, Yrk[n] + 1/2 * H * Kn22)
+    -- Kn3 da espécie 1 (K13) e Kn3 da espécie 2 (K23)
+    K13 = F1(Tempo[n] + 1/2 * H, Xrk[n] + 1/2 * H * K12, Yrk[n] + 1/2 * H * K22)
+    K23 = F2(Tempo[n] + 1/2 * H, Xrk[n] + 1/2 * H * K12, Yrk[n] + 1/2 * H * K22)
 
-    -- Kn4 da espécie 1 (Kn14) e Kn4 da espécie 2 (Kn24)
-    Kn14 = F1(Tempo[n] + H, Xrk[n] + H * Kn13, Yrk[n] + H * Kn23)
-    Kn24 = F2(Tempo[n] + H, Xrk[n] + H * Kn13, Yrk[n] + H * Kn23)
+    -- Kn4 da espécie 1 (K14) e Kn4 da espécie 2 (K24)
+    K14 = F1(Tempo[n] + H, Xrk[n] + H * K13, Yrk[n] + H * K23)
+    K24 = F2(Tempo[n] + H, Xrk[n] + H * K13, Yrk[n] + H * K23)
 
     -- Espécie 1 (Xrk)
-    Xrk[n+1] = Xrk[n] + H * 1/6 * (Kn11 + 2*Kn12 + 2*Kn13 + Kn14)
+    Xrk[n+1] = Xrk[n] + H * 1/6 * (K11 + 2*K12 + 2*K13 + K14)
 
     -- Espécie 2 (Yrk)
-    Yrk[n+1] = Yrk[n] + H * 1/6 * (Kn21 + 2*Kn22 + 2*Kn23 + Kn24)
+    Yrk[n+1] = Yrk[n] + H * 1/6 * (K21 + 2*K22 + 2*K23 + K24)
 end
 
 
