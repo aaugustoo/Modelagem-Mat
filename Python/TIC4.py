@@ -57,7 +57,7 @@ def f2(t, x, v):
     return resultado
 
 
-# Preenchimento das posições iniciais (indície 0) de X e V com os valores da condição inicial do problema,
+# Preenchimento da posição inicial (índice 0) de X e V com os valores da condição inicial do problema,
 # posição inicial x0 em X, velocidade inicial v0 em V
 X[0] = x0
 V[0] = v0
@@ -122,4 +122,4 @@ GraficoXV.xlabel('tempo')
 GraficoXV.ylabel('posição/velocidade')
 GraficoXV.grid(True)
 GraficoXV.legend()
-GraficoXV.show() 
+GraficoXV.show()
